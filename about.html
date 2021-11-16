@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-color: black;
+}
+.navbar{
+    position:fixed;
+    width: 100%;
+    background:black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+    z-index: 3;
+
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin:auto;
+}
+.navbar .sticky{
+    padding: 15px 0;
+    background:crimson;
+}
+.navbar .max-width{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color:aliceblue;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color:aliceblue;
+    font-size: 18px;
+    font-weight: 500px;
+    margin-left: 25px;
+    transition:color 0.3s ease;
+}
+.home{
+    background-color: black;
+}
+.navbar .menu li a:hover{
+    color:crimson;
+}
+.navbar .logo a span{
+    color:aliceblue;
+}
+.collapsible {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+
+}
+
+.active, .collapsible:hover {
+  background-color:crimson;
+}
+#header{
+    background-color:crimson;
+    text-align: center;
+    padding: 5px;
+    padding-top: 70px;
+}
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color:white;
+}
+.content{
+  background-color:white;
+}
+.content p{
+  color:black;
+  margin:auto;
+}
+a:link {
+  text-decoration: none;
+}
+#footer{
+    clear: both; 
+    padding:5px;
+    background-color:black;
+    color:white;
+    text-align: right;
+}
+.slika img{
+  padding-left: 540px;
+  
+}
+
+</style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="max-width">
+        <div class="logo"><a href="#"><span>Ivona Mircheska</span></a></div>
+        <ul class="menu">
+           <ul class="menu">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="gallery.html">Gallery</a></li>
+               <li><a href="#">Blog</a></li>
+               
+           </ul>
+        </ul>
+    </div>
+</nav>
+
+
+  <div id="header">
+    <h1 style="color:aliceblue; font-size: 30px;font-family: Arial, Helvetica, sans-serif" id="contact">My interests and links to my favourite sites!</h1>
+</div>
+<br><br>
+<p class="slika"><img src="slika.png" alt="entertainement"  width="1000" height="400" ></p>
+<button type="button" class="collapsible"><h2>Movies</h2></button>
+
+<div class="content">
+<br>
+   <p>The type of movie genre I prefer watching is Scince-Fiction,Mystery,Action or Conspiracy.The reason why I prefer these types of movies is because i think it keeps the viewer alert and entertained throughout the entirety of the movie and helps them dissasociate from reality.My favourite movies from this genre are:<a href="https://www.imdb.com/title/tt0816692/" >Interstellar</a>,<a href="https://www.imdb.com/title/tt0319262/?ref_=nv_sr_srsg_0" >The day after tommorow</a>,<a href="https://www.imdb.com/title/tt1375666/?ref_=nv_sr_srsg_0">Inception</a>,<a href="https://www.imdb.com/title/tt6723592/?ref_=nv_sr_srsg_0">Tenet</a>,<a href="https://www.imdb.com/title/tt1981128/?ref_=nv_sr_srsg_0">Geostorm</a>. </p>
+   <br>
+   <p><img src="interstelar.jpg" alt="Interstellar" width="250" height="350"> <img src="tomorrow.jpg" alt="The day after tommorow" width="250" height="350">  <img src="inception.jpg" alt="Inception" width="250" height="350">  <img src="tenet.jpg" alt="tenet" width="250" height="350"> <img src="geostorm.jpg" alt="Geostorm" width="250" height="350"> </p><br>
+   <p> <a href="https://www.netflix.com/mk/browse/genre/3327" alt="movies" >Link to Netflix</a> </h3></p>
+</div><br>
+<button type="button" class="collapsible"><h2>Music</h2></button>
+<div class="content">
+  <br>
+  
+  <p>My favourite musician is Mika.I find his songs unique because they are very calming and relaxing but still hold so much power because of his voise and the meaning behind his lyrics.My favourite Mika songs are<a href="https://www.youtube.com/watch?v=0CGVgAYJyjk"> Grace Kelly</a>,<a href="https://www.youtube.com/watch?v=RVmG_d3HKBA">Take it easy</a>,<a href="https://www.youtube.com/watch?v=AWiccrTB4LM">Love Today</a>,<a href="https://www.youtube.com/watch?v=iF_w7oaBHNo">Blame it on the girls</a>,<a href="https://www.youtube.com/watch?v=ZK3HWSNNSiA">Love you when I am drunk</a> and etc.</p>
+  <br>
+  <p><img src="mika1.jpg" alt="Mika" width="250" height="350"> <img src="mika2.jpg" alt="Mika" width="250" height="350">  <img src="mika3.jpg" alt="Mika" width="250" height="350">  <img src="mika4.jpg" alt="Mika" width="250" height="350"> <img src="mika5.jpg" alt="Mika" width="250" height="350"> </p><br>
+  <p><a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO3p9Ga4">Link to Spotify</a></h3></p>
+</div><br>
+<button type="button" class="collapsible"><h2>Books</h2></button>
+<div class="content">
+  <br>
+  <p>Dan Brown is an author I came across by accident.Since discovering his work I haven't been able to put his books down.He usually writes books with a thriller theme and those are the ones a enjoy the most.My favourites are:Deception point,Digital Fortress,The Davinci Code,The Lost Symbol,Inferno.</p>
+  <br>
+  <p><img src="deception.jpg" alt="Deception point" width="250" height="350"> <img src="digital.jpg" alt="Digital Fortress" width="250" height="350">  <img src="kniga.jpg" alt="The Davinci Code" width="250" height="350">  <img src="symbol.jpg" alt="The Lost Symbol" width="250" height="350"> <img src="inferno.jpg" alt="Inferno" width="250" height="350"> </p><br>
+  <p><a  href="https://danbrown.com/#author-section/">Link to Dan Brown site </a></h3></p>
+</div>
+
+<div id="footer">
+  Copyright &copy; 2021 Ivona Mirceska.
+  </div>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+</script>
+<div style="margin-top: 100px"></div>
+</body>
+</html>

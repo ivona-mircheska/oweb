@@ -1,42 +1,130 @@
-body{
-    background-color:black;
-    font-family: Helvetica,Arial,sans-serif;
-}
-a{
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
     text-decoration: none;
-    color:blue;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+.navbar{
+    position:fixed;
+    width: 100%;
+    background:black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+    z-index: 3;
+
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin:auto;
+}
+.navbar .sticky{
+    padding: 15px 0;
+    background:crimson;
+}
+.navbar .max-width{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color:aliceblue;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color:aliceblue;
+    font-size: 18px;
+    font-weight: 500px;
+    margin-left: 25px;
+    transition:color 0.3s ease;
+}
+.home{
+    background-color: black;
+}
+.navbar .menu li a:hover{
+    color:crimson;
+}
+.navbar .logo a span{
+    color:aliceblue;
+}
+/*home section*/
+.home{
+    display: flex;
+    height:100vh;
+    color: aliceblue;
+    min-height: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home .max-width{
+    margin:auto 0 auto 40 px;
+    
+}
+.home .home-content .text2{
+    font-size: 45px;
+    text-align: center;
+   padding-top: 150px;
+   color:crimson;
+}
+.home .home-content .text{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+   padding-left: 3px;
+   color:aliceblue;
+}
+.home .home-content .text-1{
+    font-size: 50px;
+    text-align: center;
+}
+.home .home-content .text-1 span {
+    font-size: 50px;
+    font-weight: 600;
+    color:aliceblue;
+  text-align: center;
+}
+.home .home-content img{
+  float:left
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin:5px 0;
+    
+}
+
 h1,h2{
     margin: 0;
 }
+
 #header{
-    background-color: rgb(205, 43, 226);
-    color:white;
+    background-color:crimson;
     text-align: center;
-    padding:10px;
+    padding: 5px;
 }
-#container{
+#main{
     background-color: white;
     width: 1500px;
-    margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     
 }
 #content{
-    padding: 10px;;
+    padding: 20px;
+    
 }
-#navigation{
-    width: 300px;
-    float: left;
-}
-#navigation ul{
-    list-style-type:none;
-    padding:0;
-}
+
+
 #about{
     width: 1100px;
-    float:right;
+    float:center;
    
    padding-left: 0%;
 }
@@ -56,12 +144,120 @@ h1,h2{
     color:white;
     text-align: right;
 }
+* {box-sizing: border-box;}
 
-body h1.selected{
-   
-    background-color:rgb(43, 116, 226);
-    color: whitesmoke;
-    text-align: center;
-    padding: 10px;
-    font-size: 40px;
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
+
+input[type=submit] {
+  background-color: crimson;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:black;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: crimson;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px black;
+  }
+  .button a{
+      text-decoration-line: none;
+      text-decoration: none;
+      color:white;
+  }
+  
+  .button:hover {background-color: black}
+  
+  .button:active {
+    background-color:crimson;
+    box-shadow: 0 5px black;
+    transform: translateY(4px);
+  }
+  
+
+  .month_style {
+    width: 120px;
+    font-size: 18px;
+    color:blue;
+    background-color: azure;
+    border: 1px solid blue;
+    border-radius:5px;
+  }
+  
+  .year_style {
+    width: 85px;
+    font-size: 18px;
+    text-align: center;
+    color:blue;
+    background-color: azure;
+    border: 1px solid blue;
+    border-radius:5px;
+  }
+  
+  .build_style {
+    width: 85px;
+    font-size: 18px;
+    cursor: pointer;
+    color:white;
+    background-color: blue;
+    border: 1px solid blue;
+    border-radius:5px;
+  }
+  
+  .area_style {
+    width: 294px;
+    margin-top: 15px;
+    font-size: 24px;
+    max-width: 294px;
+    max-height: 224px;
+    background:azure;
+    color:blue;
+    border:1px solid blue;
+    border-radius:8px;
+  }
+  
+  
+  .btn_nav {
+    background-color: azure;
+    width: 57px;
+    color:blue;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight:bold;
+    border-radius:5px;
+    border:1px solid blue;
+  }
+  
+/*rgb(205, 43, 226)

@@ -2,63 +2,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width.initial-scale=1.0">
     <title>Personal website</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link type="text/javascript" href="script.js">
+   
 </head>
 <body>
-    <h1 class="selected">Welcome!</h1>
-    <div id="container">
-        <div id="header">
-            <h1>Home page</h1>
-        </div>
-        <div id="content">
-            <div id="navigation">
-                <img src="profilna.jpg" alt="Ivona Mirceska"  width="300" height=450>
-                <p><h2 style="text-align: center;">Home page</h2>
-                    <ul style="text-align: center;">
-                     <li><a class ="selected" href="#About">About</a></li>
-                     <li><a href="#Movies">Movies</a></li>
-                     <li><a href="#Music">Music</a></li>
-                     <li><a href="#Books">Books</a></li>
-                     <li><a href="#Gallery">Gallery</a></li>
-                     <li><a href="#Blog">Blog</a></li>
-                     <li><a href="#Poll">Poll</a></li>
-                     </ul>
-                </p>
-                    <br>
-                <p><h2 style="text-align: center;">Contact information</h2>
-                    <ul style="text-align: center;">
-                     <li><a href="https://www.facebook.com/mirceskaivona">Facebook</a></li>
-                     <li><a class ="selected" href="https://ivonamirceska3@gmail.com">Mail</a></li>
-                     <li><a href="https://twitter.com/IvonaMirceska">Twitter</a></li>
-                     <li><a href="https://www.instagram.com/mirceskaivona">Instagram</a></li>
-                     </ul>
-                </p>
+   <nav class="navbar">
+       <div class="max-width">
+           <div class="logo"><a href="#"><span>Ivona Mircheska</span></a></div>
+           <ul class="menu">
+              <ul class="menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="#">Blog</a></li>
                   
-            </div>
-                <div id="about">
-                <h2 id="About">About me!</h2>
-                 <p>Hello my name is<strong> <em>Ivona Mirceska</em> </strong> ,I am 21 years old and I live in Skopje.Currently I am a college student studying computer engineernig and information technology at the Faculty of Electrical Ingineering & Information Technologies.On this page I will present to you my perosnal interests of the following topics:favourite movies,music,books and etc.</p>
-                 
-                 <h2>My interests and links to my favourite sites </h2>
-                 <h3 id="Movies"><a href="https://www.netflix.com/mk/browse/genre/3327" alt="movies">Movies</a> </h3>
-                 <p>The type of movie genre I prefer watching is Scince-Fiction,Mystery,Action or Conspiracy.The reason why I prefer these types of movies is because i think it keeps the viewer alert and entertained throughout the intirety of the movie and helps them dissasociate from reality.My favourite movies from this genre are:<a href="https://www.imdb.com/title/tt0816692/" >Interstellar</a>,<a href="https://www.imdb.com/title/tt0319262/?ref_=nv_sr_srsg_0" >The day after tommorow</a>,<a href="https://www.imdb.com/title/tt1375666/?ref_=nv_sr_srsg_0">Inception</a>,<a href="https://www.imdb.com/title/tt6723592/?ref_=nv_sr_srsg_0">Tenet</a>,<a href="https://www.imdb.com/title/tt1981128/?ref_=nv_sr_srsg_0">Geostorm</a>. </p>
-                 <p><img src="interstelar.jpg" alt="Interstellar" width="150" height="180"><img src="tomorrow.jpg" alt="The day after tommorow" width="150" height="180">  <img src="inception.jpg" alt="Inception" width="150" height="180">  <img src="tenet.jpg" alt="tenet" width="150" height="180"> <img src="geostorm.jpg" alt="Geostorm" width="150" height="180"> </p>
-                 <h3 id="Music"><a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO3p9Ga4">Music</a></h3>
-                 <p>My favourite musician is Mika.I find his songs unique because they are very calming and relaxing but still hold so much power because of his voise and the meaning behind his Lyrics.My favourite Mika songs are<a href="https://www.youtube.com/watch?v=0CGVgAYJyjk"> Grace Kelly</a>,<a href="https://www.youtube.com/watch?v=RVmG_d3HKBA">Take it easy</a>,<a href="https://www.youtube.com/watch?v=AWiccrTB4LM">Love Today</a>,<a href="https://www.youtube.com/watch?v=iF_w7oaBHNo">Blame it on the girls</a>,<a href="https://www.youtube.com/watch?v=ZK3HWSNNSiA">Love you when I am drunk</a> and etc.</p>
-                 <h3 id="Books"><a  href="https://danbrown.com/#author-section/">Books </a></h3>
-                 <p>Dan Brown is an author I came across by accident.Since discovering his work I haven't been able to put his books down.He usually writes books with a thriller theme and those are the ones a enjoy the most.My favourites are:Deception point,Digital Fortress,The Davinci Code,The Lost Symbol,Inferno.</p>
-                 <p><img src="deception.jpg" alt="Deception point" width="150" height="180"> <img src="digital.jpg" alt="Digital Fortress" width="150" height="180">  <img src="kniga.jpg" alt="The Davinci Code" width="150" height="180">  <img src="symbol.jpg" alt="The Lost Symbol" width="150" height="180"> <img src="inferno.jpg" alt="Inferno" width="150" height="180"> </p>
+              </ul>
+           </ul>
+       </div>
+   </nav>
 
-                
-                
-            </div>
-            
+
+
+<section class="home" id="home">
+    <div class="max-width">
+        <div class="home-content">
+            <img src="profilna.jpg" alt="Ivona Mirceska"  width="400" height=600>
+            <div class="text2">Welcome to my personal website ! </div>
+            <div class="text"><p>Hello my name is<strong> <span style="color: crimson">Ivona Mircheska</span> ,I am 21 years old and I live in Skopje.Currently I am a college student studying computer engineering and information technology at the Faculty of Electrical Ingineering & Information Technologies.On this website I will present to you my perosnal interests of the following topics:favourite movies,music,books and etc.</p></div>
+               
         </div>
-        <div id="footer">
-        Copyright &copy; 2021 Ivona Mirceska.
-        </div>
+        
+            <button class="button"><a href="#contact">Contact me!</a></button>
+        
     </div>
-    
-</body>
-</html>
+</section>
+   
+        <div id="header">
+            <h1 style="color:aliceblue; font-size: 30px;font-family: Arial, Helvetica, sans-serif" id="contact">Contact Form</h1>
+        </div> 
+
+<div class="container" >
+    <form name="myForm"  >
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname" placeholder="Your last name..">
+
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input id="submit" type="submit" value="Submit">
+  </form>
+</div>
+
+
+<p>
+    <ul style="text-align: center;">
+        <li><a href="https://www.facebook.com/mirceskaivona"><img src="facebook.png" width="55px" height="50px"></a><a class ="selected" href="https://ivonamirceska3@gmail.com"><img src="gmail.png" width="85px" height="50px"></a><a href="https://twitter.com/IvonaMirceska"><img src="twitter.png" width="42px" height="35px"></a></li>
+        
+         </ul>
+   </p>
+   <script>
+    document.getElementById("submit").addEventListener("click", function() {
+      alert("Cannot process!");
+    });
+    </script>
+   
+   
+<div id="footer">
+    Copyright &copy; 2021 Ivona Mirceska.
+    </div>
+</div>
+
+  
+   <!--<p>
+    <ul style="text-align: center;">
+        <li><a href="https://www.facebook.com/mirceskaivona"><img src="facebook.png" width="55px" height="50px"></a></li>
+        <li><a class ="selected" href="https://ivonamirceska3@gmail.com"><img src="gmail.png" width="85px" height="50px"></a></li>
+        <li><a href="https://twitter.com/IvonaMirceska"><img src="twitter.png" width="42px" height="35px"></a></li>
+         </ul>
+   </p>-->
+
+  
+  
+
+
+
+
+
