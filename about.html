@@ -2,7 +2,16 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $("button").click(function(){
+      $(".collapsible").show();
+    });
+  });
 
+  </script>
+<title>Ivona Mircheska</title>
 <style>
   *{
     margin:0;
@@ -13,6 +22,10 @@
 }
 body{
   background-color: black;
+  background-image: url('fun4.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 .navbar{
     position:fixed;
@@ -77,25 +90,25 @@ body{
 }
 
 .active, .collapsible:hover {
-  background-color:crimson;
+  background-color:rgb(196, 98, 196);
 }
 #header{
     background-color:crimson;
     text-align: center;
-    padding: 5px;
+    padding: 20px;
     padding-top: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color:white;
+  background-color:black;
 }
-.content{
-  background-color:white;
-}
+
 .content p{
-  color:black;
+  color:white;
   margin:auto;
 }
 a:link {
@@ -108,10 +121,9 @@ a:link {
     color:white;
     text-align: right;
 }
-.slika img{
-  padding-left: 540px;
-  
-}
+
+
+
 
 </style>
 </head>
@@ -124,7 +136,7 @@ a:link {
                <li><a href="index.html">Home</a></li>
                <li><a href="about.html">About</a></li>
                <li><a href="gallery.html">Gallery</a></li>
-               <li><a href="#">Blog</a></li>
+               <li><a href="blog.html">Blog</a></li>
                
            </ul>
         </ul>
@@ -132,12 +144,11 @@ a:link {
 </nav>
 
 
-  <div id="header">
+
+  
     <h1 style="color:aliceblue; font-size: 30px;font-family: Arial, Helvetica, sans-serif" id="contact">My interests and links to my favourite sites!</h1>
-</div>
 <br><br>
-<p class="slika"><img src="slika.png" alt="entertainement"  width="1000" height="400" ></p>
-<button type="button" class="collapsible"><h2>Movies</h2></button>
+<button type="button" class="collapsible" style="text-align: center;"><h2>Movies</h2></button>
 
 <div class="content">
 <br>
@@ -145,17 +156,16 @@ a:link {
    <br>
    <p><img src="interstelar.jpg" alt="Interstellar" width="250" height="350"> <img src="tomorrow.jpg" alt="The day after tommorow" width="250" height="350">  <img src="inception.jpg" alt="Inception" width="250" height="350">  <img src="tenet.jpg" alt="tenet" width="250" height="350"> <img src="geostorm.jpg" alt="Geostorm" width="250" height="350"> </p><br>
    <p> <a href="https://www.netflix.com/mk/browse/genre/3327" alt="movies" >Link to Netflix</a> </h3></p>
-</div><br>
-<button type="button" class="collapsible"><h2>Music</h2></button>
+</div>
+<button type="button" class="collapsible" style="text-align: center;"><h2>Music</h2></button>
 <div class="content">
   <br>
-  
   <p>My favourite musician is Mika.I find his songs unique because they are very calming and relaxing but still hold so much power because of his voise and the meaning behind his lyrics.My favourite Mika songs are<a href="https://www.youtube.com/watch?v=0CGVgAYJyjk"> Grace Kelly</a>,<a href="https://www.youtube.com/watch?v=RVmG_d3HKBA">Take it easy</a>,<a href="https://www.youtube.com/watch?v=AWiccrTB4LM">Love Today</a>,<a href="https://www.youtube.com/watch?v=iF_w7oaBHNo">Blame it on the girls</a>,<a href="https://www.youtube.com/watch?v=ZK3HWSNNSiA">Love you when I am drunk</a> and etc.</p>
   <br>
   <p><img src="mika1.jpg" alt="Mika" width="250" height="350"> <img src="mika2.jpg" alt="Mika" width="250" height="350">  <img src="mika3.jpg" alt="Mika" width="250" height="350">  <img src="mika4.jpg" alt="Mika" width="250" height="350"> <img src="mika5.jpg" alt="Mika" width="250" height="350"> </p><br>
   <p><a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO3p9Ga4">Link to Spotify</a></h3></p>
-</div><br>
-<button type="button" class="collapsible"><h2>Books</h2></button>
+</div>
+<button type="button" class="collapsible" style="text-align: center;"><h2>Books</h2></button>
 <div class="content">
   <br>
   <p>Dan Brown is an author I came across by accident.Since discovering his work I haven't been able to put his books down.He usually writes books with a thriller theme and those are the ones a enjoy the most.My favourites are:Deception point,Digital Fortress,The Davinci Code,The Lost Symbol,Inferno.</p>
@@ -164,9 +174,7 @@ a:link {
   <p><a  href="https://danbrown.com/#author-section/">Link to Dan Brown site </a></h3></p>
 </div>
 
-<div id="footer">
-  Copyright &copy; 2021 Ivona Mirceska.
-  </div>
+
 </div>
 <script>
 var coll = document.getElementsByClassName("collapsible");

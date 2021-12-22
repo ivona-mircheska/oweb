@@ -143,6 +143,7 @@ h1,h2{
     background-color:black;
     color:white;
     text-align: right;
+  
 }
 * {box-sizing: border-box;}
 
@@ -205,7 +206,32 @@ input[type=submit]:hover {
     transform: translateY(4px);
   }
   
-
+ #date{
+  display: inline-block;
+  padding: 5px 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: crimson;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px white;
+ 
+ }
+ #date:hover {background-color: black}
+ #date:active {
+  background-color:crimson;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+ #demo{
+   color:crimson;
+ }
   .month_style {
     width: 120px;
     font-size: 18px;

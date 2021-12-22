@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width.initial-scale=1.0">
-    <title>Personal website</title>
+    <title>Ivona Mircheska</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link type="text/javascript" href="script.js">
    
@@ -17,7 +17,7 @@
                   <li><a href="index.html">Home</a></li>
                   <li><a href="about.html">About</a></li>
                   <li><a href="gallery.html">Gallery</a></li>
-                  <li><a href="#">Blog</a></li>
+                  <li><a href="blog.html">Blog</a></li>
                   
               </ul>
            </ul>
@@ -55,6 +55,17 @@
 
     <label for="subject">Subject</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <label for="membership">Rate my site:</label>
+    <select name="membership" id="membership">
+    <option value="5">Great</option>
+    <option value="4">Nice</option>
+    <option value="3" >Okay</option>
+    <option value="2">Needs improvement</option>
+    <option value="1">Bad</option>
+    
+    
+   </select>
+
 
     <input id="submit" type="submit" value="Submit">
   </form>
@@ -69,24 +80,22 @@
    </p>
    <script>
     document.getElementById("submit").addEventListener("click", function() {
-      alert("Cannot process!");
+      alert("Something missing!");
     });
     </script>
+   <button id="date" type="button"
+   onclick="document.getElementById('demo').innerHTML = Date()">
+   Display Date and Time.</button>
    
+   <p id="demo"></p>
    
-<div id="footer">
+<div id="footer" >
     Copyright &copy; 2021 Ivona Mirceska.
     </div>
 </div>
 
   
-   <!--<p>
-    <ul style="text-align: center;">
-        <li><a href="https://www.facebook.com/mirceskaivona"><img src="facebook.png" width="55px" height="50px"></a></li>
-        <li><a class ="selected" href="https://ivonamirceska3@gmail.com"><img src="gmail.png" width="85px" height="50px"></a></li>
-        <li><a href="https://twitter.com/IvonaMirceska"><img src="twitter.png" width="42px" height="35px"></a></li>
-         </ul>
-   </p>-->
+   
 
   
   

@@ -43,18 +43,17 @@
     
     
     <div class="form">
-        
-      <span style="color:white">Name:<input type="text" id="name" /><br><br></span>
-      <span style="color:white">Date:<input type="date" id="date" /><br><br></span>
-      <textarea rows="5" col="30" id="bodyText" placeholder="Comment here..."></textarea><br><br>
-     
-      <input type="button" id="addComment" value="Add comment" style="color:white;background-color: crimson;" /><br><br>
-      <span style="color:crimson">Comment section:</span>
-  </div>
-  <div  id="container1" style="text-align: center;color:white" >
     
-  </div>
+        <span style="color:white">Name:<input type="text" id="name" /><br><br></span>
+        <span style="color:white">Date:<input type="date" id="date" /><br><br></span>
+        <span style="color:white">Comment:<textarea rows="5" col="30" id="bodyText" placeholder="Comment here..."></textarea><br> <br></span>
+        <input type="button" id="addComment" value="Add comment" style="color:white;background-color: crimson;" />
+    </div>
+    <div id="container1" style="text-align: center;color:white" >
     
+    </div>
+    
+    </div>
       <div class="container">
         
         <img src="2.jpg" >
@@ -74,13 +73,10 @@
         
         <span style="color:white">Name:<input type="text" id="name" /><br><br></span>
         <span style="color:white">Date:<input type="date" id="date" /><br><br></span>
-        <textarea rows="5" col="30" id="bodyText" placeholder="Comment here..."></textarea><br><br>
-       
-        <input type="button" id="addComment" value="Add comment" style="color:white;background-color: crimson;" /><br><br>
-        <span style="color:crimson">Comment section:</span>
+        <span style="color:white">Comment:<textarea rows="5" col="30" id="bodyText" placeholder="Comment here..."></textarea><br> <br></span>
+        <input type="button" id="addComment" value="Add comment" style="color:white;background-color: crimson;" />
     </div>
-    <div  id="container1" style="text-align: center;color:white" >
-      
+    <div id="container1" style="text-align: center;color:white" >
     </div>
     
       <div class="container" >
@@ -99,17 +95,14 @@
         </div>
       </div>
       <div class="form">
-        
         <span style="color:white">Name:<input type="text" id="name" /><br><br></span>
         <span style="color:white">Date:<input type="date" id="date" /><br><br></span>
-        <textarea rows="5" col="30" id="bodyText" placeholder="Comment here..."></textarea><br><br>
-       
-        <input type="button" id="addComment" value="Add comment" style="color:white;background-color: crimson;" /><br><br>
-        <span style="color:crimson">Comment section:</span>
+        <span style="color:white">Comment:<textarea rows="5" col="30" id="bodyText" placeholder="Comment here..."></textarea><br> <br></span>
+        <input type="button" id="addComment" value="Add comment" style="color:white;background-color: crimson;" />
     </div>
-    <div  id="container1" style="text-align: center;color:white" >
-      
+    <div id="container1" style="text-align: center;color:white" >
     </div>
+    
       <div class="container">
         
         <img src="4.jpg" >
@@ -127,16 +120,13 @@
       </div>
       
       <div class="form">
-        
+       
         <span style="color:white">Name:<input type="text" id="name" /><br><br></span>
         <span style="color:white">Date:<input type="date" id="date" /><br><br></span>
-        <textarea rows="5" col="30" id="bodyText" placeholder="Comment here..."></textarea><br><br>
-       
-        <input type="button" id="addComment" value="Add comment" style="color:white;background-color: crimson;" /><br><br>
-        <span style="color:crimson">Comment section:</span>
+        <span style="color:white">Comment:<textarea rows="5" col="30" id="bodyText" placeholder="Comment here..."></textarea><br> <br></span>
+        <input type="button" id="addComment" value="Add comment" style="color:white;background-color: crimson;" />
     </div>
-    <div  id="container1" style="text-align: center;color:white" >
-      
+    <div id="container1" style="text-align: center;color:white">
     </div>
     
   
@@ -218,14 +208,14 @@
 <script>
     function render(data)
 {
-    var html="<div class=commentBox><div class='rightPanel'><span >"+data.name+" "+data.date+" "+data.body+"<div class='clear'></div></div>";
+    var html="<div class=commentBox><div class='rightPanel'><span >"+data.name+"<div class='date'>"+data.date+"</div><p>"+data.body+"</p></div><div class='clear'></div></div>";
     $('#container1').append(html);
 }
 
 $(document).ready(function(){
 
 var comment=[
-    {"name":"Ivona Mirceska","date":"2021-12-22","body":"comment"}
+    {"name":"Ivona Mirceska","date":"12 Apr ,2021","body":"Comment section"}
 ];
 for(var i=0;i<comment.length;i++)
 {
@@ -237,15 +227,14 @@ for(var i=0;i<comment.length;i++)
        "date":$('#date').val(),
        "body":$('#bodyText').val()
    };  
-   
+   console.log(addObj);
    comment.push(addObj);
    render(addObj);
-   $('#name').val('');
-   $('#date').val('dd/mm/yyyy');
-   $('#bodyText').val('');
    });
 });
 </script>
 
 </html>
-    
+    </body>   
+      
+ 

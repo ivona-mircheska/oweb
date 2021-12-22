@@ -3,9 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width.initial-scale=1.0">
-    <title>Personal website</title>
+    <title>Ivona Mircheska</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link type="text/javascript" href="script.js">
+    
+ <style>
+        #footer{
+    clear: both; 
+    padding:5px;
+    background-color:black;
+    color:white;
+    text-align: right;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    position:fixed;
+    width: 100%;
+    background:black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+    z-index: 3;
+
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin:auto;
+}
+.navbar .sticky{
+    padding: 15px 0;
+    background:crimson;
+}
+.navbar .max-width{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color:aliceblue;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color:aliceblue;
+    font-size: 18px;
+    font-weight: 500px;
+    margin-left: 25px;
+    transition:color 0.3s ease;
+}
+.home{
+    background-color: black;
+}
+.navbar .menu li a:hover{
+    color:crimson;
+}
+.navbar .logo a span{
+    color:aliceblue;
+}
+body{
+    background-color: black;
+}
+p{
+    color:white;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color:white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+.responsive{
+
+    margin-top: 50px;
+    
+
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#image_input{
+  display: inline-block;
+  padding: 5px 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: crimson;
+  border: none;
+  border-radius: 15px;
+  
+ }
+ #addComment{
+  display: inline-block;
+  padding: 5px 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: crimson;
+  border: none;
+  border-radius: 15px;
+ }
+ 
+ #date:hover {background-color: black}
+
+    </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script >
+  window.addEventListener('load',function(){
+    if(this.files && this.files[0]){
+    document.querySelector('input[type="file"]').addEventListener('change',function(){
+      var image=document.getElementById("#image_input");
+      img.src=URL.createObjectURL(this.files[0]);
+
+    })
+  }
+  })
+  
+</script>
+
+    
 </head>
 <body>
    <nav class="navbar">
@@ -22,3 +201,236 @@
            </ul>
        </div>
    </nav>
+  <h1 style="color:crimson;padding-top: 70px;text-align: center;">Top 4 single tennis players in 2021</h1>
+  
+  <div class="responsive">
+    <div class="gallery">
+      
+      <a target="_blank" href="novak.jpg">
+        <img src="novak.jpg" alt="Novak" width="600" height="400">
+      </a>
+      <div id="text" style="padding:6px;">
+        
+      <div class="desc" style="color:crimson">Novak Djokovic</div>
+    </div>
+    <div id="text">
+    <p>Novak Djokovic (born 22 May 1987) is a Serbian professional tennis player. He is currently ranked as world No. 1 by the Association of Tennis Professionals (ATP). Djokovic has been No. 1 for a record total of 347 weeks, and has finished as ATP Year-End No. 1 on a record seven occasions. He has won a joint record 20 Grand Slam men's singles titles, including a record nine Australian Open titles. Overall, he has won 86 ATP singles titles, including a record 37 Masters events. Djokovic is the only man in the Open Era to achieve a double career Grand Slam and complete a non-calendar year Grand Slam. He is also the only player to complete the career Golden Masters on the ATP Tour, which he has done twice.In 2021, Djokovic won the French Open and became the first man in the Open Era to achieve the career Grand Slam twice.Currently he has 86 ATP titles.
+    </p>
+        
+ </div>
+    
+  </div>
+  
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+        
+      <a target="_blank" href="danil.jpg">
+        <img src="danil.jpg" alt="Danil" width="600" height="400">
+      </a>
+      <div id="text" style="padding:6px;">
+        
+      <div class="desc" style="color:crimson">Danil Medvedev</div>
+    </div>
+    <div id="text">
+        
+    <p>Daniil Sergeyevich Medvedev(born 11 February 1996) is a Russian professional tennis player. He is currently ranked by the  Association of Tennis Professionals (ATP)ATP as world No. 2, which is his career-high singles ranking first achieved on 15 March 2021. He has won thirteen ATP Tour singles titles, including the 2021 US Open and the 2020 ATP Finals. With the latter win, Medvedev became the first and only player to defeat the top 3 ranked players in the world en route to the year-end championship title. Medvedev was also the runner-up at the 2019 US Open and the 2021 Australian Open.In 2017, he participated in a Major for the first time at Wimbledon, where he defeated world No. 3 Stan Wawrinka. In 2018, Medvedev won his first ATP titles at Sydney and Winston-Salem, and his first ATP 500 title in Tokyo.
+       He achieved a breakthrough in 2019. 
+    </p>
+        
+ </div>
+    
+  </div>
+  
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+        
+      <a target="_blank" href="zverev4.jpg">
+        <img src="zverev4.jpg" alt="Zverev" width="600" height="400">
+      </a>
+      <div id="text" style="padding:6px;">
+        
+      <div class="desc" style="color:crimson">Aleksander Zverev</div>
+    </div>
+    <div id="text">
+    <p>Alexander "Sascha" Zverev ( born 20 April 1997) is a German professional tennis player. He has been ranked by the Association of Tennis Professionals (ATP) as high as world No. 3, and has been a permanent fixture in the top 10 since July 2017. Zverev's career highlights include titles at the 2020 Olympics and 2018 ATP Finals, the former making him the first German tennisman to win an Olympic medal in tennis single and the latter making him the youngest winner at the year-end championship in a decade. He has won five ATP Masters and 1000 titles. Zverev has won 18 ATP titles in singles and two in doubles. He reached his first major final at the 2020 US Open, finishing runner-up to Dominic Thiem.At 20 years old, he was the youngest player to debut in the top 20 since Novak Djokovic. At the Laver Cup, Zverev has played in Team Europe's early success in the competition, winning the  matches in 2018 and 2019.
+    </p>
+        
+ </div>
+    
+  </div>
+  
+  </div>
+  
+  <div class="responsive">
+    <div class="gallery">
+        
+      <a target="_blank" href="stefanos1.jpg">
+        <img src="stefanos1.jpg" alt="Stefanos" width="600" height="400">
+      </a>
+      <div id="text" style="padding:6px;">
+        
+      <div class="desc" style="color:crimson">Stefanos Tsttsipas</div>
+    </div>
+ 
+    <div id="text">
+    <p>Stefanos Tsitsipas ( born 12 August 1998) is a Greek professional tennis player. He is the second youngest player ranked in the top 10 by the ATP and reached a career-high ranking of No. 3 in the world on 9 August 2021, making him the highest-ranked Greek player in history. Tsitsipas was the champion at the 2019 ATP Finals, becoming the youngest winner of the year-end championships in eighteen years. He has won seven ATP singles titles.
+        Tsitsipas was named the 2019 Greek Male Athlete of the Year. Since culminating his season with an exhibition title at the Next Gen ATP Finals, Tsitsipas has become a fixture in the top 10 of the ATP rankings. He won his first Masters 1000 event at the 2021 Monte-Carlo Masters. Tsitsipas reached his first Grand Slam final at the 2021 French Open, being the first Greek player to do so, but lost to Novak Djokovic in five sets after holding a two sets to love lead.
+    </p>
+        
+ </div>
+    
+  </div>
+  
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+        
+      <a target="_blank" href="ashley.jpg">
+        <img src="ashley.jpg" alt="Ashleigh" width="600" height="400">
+      </a>
+      <div id="text" style="padding:6px;">
+        
+      <div class="desc" style="color:crimson">Ashleigh Barty</div>
+    </div>
+ 
+    <div id="text">
+    <p>Ashleigh Barty (born 24 April 1996) is an Australian professional tennis player and former cricketer. She is ranked No. 1 in the world in singles by the Women's Tennis Association (WTA) and is the second Australian WTA singles No. 1 after fellow Indigenous Australian player Evonne Goolagong Cawley.[a] She has also been a top 10 player in doubles, having achieved a career-high ranking of No. 5 in the world. Barty has won thirteen singles titles and eleven doubles titles on the WTA Tour, including two Grand Slam singles titles, the 2019 French Open and 2021 Wimbledon Championships, and one Grand Slam doubles title at the 2018 US Open with partner CoCo Vandeweghe. She is also the reigning champion in singles at the WTA Finals.She has been ranked No. 1 in singles for all but four weeks since June 2019, winning seven more titles, including five in 2021, a second major title, and two WTA 1000 titles. Barty has also led Australia to a runner-up finish at the 2019 Fed Cup and won a bronze medal in mixed doubles at the Tokyo Olympics in 2021.
+    </p>
+        
+ </div>
+    
+  </div>
+  
+  </div>
+ 
+  
+  <div class="responsive">
+    <div class="gallery">
+        
+      <a target="_blank" href="aryna.jpg">
+        <img src="aryna.jpg" alt="Aryna" width="600" height="400">
+      </a>
+      <div id="text" style="padding:6px;">
+        
+      <div class="desc" style="color:crimson">Aryna Sabalenka</div>
+    </div>
+ 
+    <div id="text">
+    <p>Aryna Siarhiejeŭna Sabalenka (born 5 May 1998) is a Belarusian professional tennis player. She has been ranked as high as world No. 2 in singles and world No. 1 in doubles by the Women's Tennis Association (WTA). Sabalenka has won two Grand Slam doubles titles, the 2019 US Open and the 2021 Australian Open, alongside Elise Mertens. She has won 16 WTA titles in total, ten in singles and six in doubles. Sabalenka's best results in singles at the Grand Slam tournaments came at the 2021 Wimbledon Championships and 2021 US Open, where she reached the semifinals.
+
+        Sabalenka has a very aggressive style of play, often accumulating high numbers of winners and unforced errors. With her height, she also has a very strong serve.Sabalenka started the year ranked No. 73 in doubles.She began partnering with Elise Mertens in January.With Mertens as her partner, she completed the Sunshine Double by winning the two Premier Mandatory tournaments in March, the  Miami Open.she also qualified for the WTA Finals for the first time.
+    </p>
+        
+ </div>
+    
+  </div>
+  
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+        
+      <a target="_blank" href="barbora.jpg">
+        <img src="barbora.jpg" alt="Barbora" width="600" height="400">
+      </a>
+      <div id="text" style="padding:6px;">
+        
+      <div class="desc" style="color:crimson">Barbora Krejčíková</div>
+    </div>
+ 
+    <div id="text">
+    <p>Barbora Krejčíková ( born 18 December 1995) is a Czech professional tennis player. She has a career-high singles ranking of world No. 3, achieved on 1 November 2021, and on 22 October 2018, she became world No. 1 in doubles.
+
+        Krejčíková is a seven-time Grand Slam champion, having won the 2021 French Open singles title, the women's doubles titles at the 2018 French Open, 2018 Wimbledon Championships and 2021 French Open, all alongside compatriot Kateřina Siniaková, and the mixed doubles titles at the Australian Open in 2019 and 2021 partnering Rajeev Ram, and in 2020 with Nikola Mektić. She is one of only four active female players to have won a Grand Slam title in all three different disciplines after Serena and Venus Williams, and Samantha Stosur.
+        Krejčíková has won three singles and nine doubles titles on the WTA Tour. With Siniaková, she finished runner-up at the 2021 Australian Open, and the pair won Olympic gold in doubles at the 2020 Tokyo Olympics. Krejčíková was also part of the Czech team which won 2018 Fed Cup.
+
+
+    </p>
+        
+ </div>
+    
+  </div>
+  
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+        
+      <a target="_blank" href="pliskova.webp">
+        <img src="pliskova.webp" alt="Pliskova" width="600" height="400">
+      </a>
+      <div id="text" style="padding:6px;">
+        
+      <div class="desc" style="color:crimson">Karolina Plíšková</div>
+    </div>
+ 
+    <div id="text">
+    <p>Karolína Plíšková ( born 21 March 1992) is a Czech professional tennis player. She is a former world No. 1 in singles, reaching the top of the Women's Tennis Association (WTA) rankings on 17 July 2017 and holding the position for eight weeks. On 31 October 2016, she peaked at world No. 11 in the doubles rankings. Known for her powerful serve and forehand, Plíšková has won 16 singles and five doubles titles on the WTA tour, 10 singles and six doubles titles on the ITF Circuit, and over $20 million in prize money. She has reached two Grand Slam singles finals at the 2016 US Open and the 2021 Wimbledon Championships. As a junior, Plíšková won the girls' singles event at the 2010 Australian Open. She has also played for the Czech Republic in Fed Cup competition.
+        She reached World No. 3 on 13 September 2021 following the 2021 US Open where she reached the quarterfinals. The following week, due to wrist injury Plíšková had to withdraw from the J&T Banka Ostrava Open. At Indian Wells, she was upset by lucky loser Beatriz Haddad Maia in the third round.
+    </p>
+        
+ </div>
+    
+  </div>
+  <br>
+  <br>
+  </div>
+  <br>
+  
+<br>
+
+
+  <div class="form">
+    
+    <p style="color:crimson;font-size:30px; text-align: center;" >Upload:</p><br>
+    <span style="color:crimson">Name:<input type="text" id="name" /><br><br></span>
+    <span style="color:crimson">Surname:<input type="text" id="surname" /><br><br></span>
+    <span style="color:crimson">Topic:<textarea rows="5" col="30" id="bodyText" placeholder="Give your opinion  here..."></textarea></span><br>
+    
+    <input type="file" id="image_input" width="300" height="250" >
+    <input type="button" id="addComment" value="Add" style="color:white;background-color: crimson;" /><br><br>
+    
+
+</div>
+<br>
+<div  id="container1" style="color:white;" >
+      
+</div>
+   <div id="footer">
+    Copyright &copy; 2021 Ivona Mirceska.
+    </div>
+    <script>
+      function render(data)
+  {
+      var html="<div class=commentBox><div class='rightPanel'><span >"+data.name+" "+data.surname+" "+data.body+"<div class='clear'></div></div>";
+      $('#container1').append(html);
+  }
+  
+  $(document).ready(function(){
+  
+  var comment=[
+      {"name":"proba","surname":"proba","body":"proba"}
+  ];
+  for(var i=0;i<comment.length;i++)
+  {
+      render(comment[i]);
+  }
+      $('#addComment').click(function(){
+     var addObj={
+         "name":$('#name').val(),
+         "surname":$('#surname').val(),
+         "body":$('#bodyText').val()
+     };  
+     
+     comment.push(addObj);
+     render(addObj);
+     $('#name').val('');
+     $('#surname').val('');
+     $('#bodyText').val('');
+     });
+  });
+  </script>
+</body>
+</html>
